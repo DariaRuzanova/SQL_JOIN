@@ -15,10 +15,3 @@ VALUES ('Olga', 'Sidorova', 38, '89603443434'),
        ('Pavel', 'Smirnov', 38, '8964554748'),
        ('Alexey', 'Kovrov', 78, '89672362527');
 
-
-
-select orders.product_name, customers.name, customers.surname
-from orders
-         inner join customers
-                    on orders.customer_id = CUSTOMERS.id
-where lower(CUSTOMERS.name) = 'alexey';
